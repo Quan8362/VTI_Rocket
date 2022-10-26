@@ -10,4 +10,11 @@ public class Position {
                 ", name=" + name +
                 '}';
     }
+    public Position position1() {
+        Position position = new Position();
+        position.id = 1;
+        position.name = PositionName.DEV;
+        return position;
+    }
 }
+

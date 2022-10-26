@@ -6,9 +6,9 @@ public class Group {
 
     String name;
 
+    LocalDate createDate;
     Account creator;
 
-    LocalDate createDate;
 
     Account[] accounts; // Lưu trữ nhưng account thuộc 1 group
 
@@ -21,5 +21,22 @@ public class Group {
                 ", createDate=" + createDate +
                 ", accounts=" + Arrays.toString(accounts) +
                 '}';
+    }
+
+    public Group[] groups() {
+        Group group1 = new Group();
+        group1.id = 1;
+        group1.name = "Developer";
+
+        Group group2 = new Group();
+        group2.id = 2;
+        group2.name = "Test";
+
+        Group group3 = new Group();
+        group3.id = 3;
+        group3.name = "Sale";
+
+        Group[] groups = {group1, group2, group3};
+        return groups;
     }
 }
