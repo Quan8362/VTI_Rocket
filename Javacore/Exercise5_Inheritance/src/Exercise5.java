@@ -143,7 +143,7 @@ public class Exercise5 {
         Gender gender = null;
         switch (choosegender) {
             case 1:
-                gender = Gender.MALE;
+                gender = Gender.FELMALE;
                 break;
             case 2:
                 gender = Gender.FELMALE;
