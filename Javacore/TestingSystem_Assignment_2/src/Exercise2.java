@@ -1,5 +1,6 @@
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Locale;
 
 public class Exercise2 {
 
@@ -8,7 +9,7 @@ public class Exercise2 {
         Khai báo 1 số nguyên = 5 và sử dụng lệnh System out printf để in ra số
         nguyên đó*/
         int i = 5;
-        System.out.println(i);
+        System.out.printf("%d%n",i);
     }
 
     static void question2() {
@@ -24,7 +25,7 @@ public class Exercise2 {
         Khai báo 1 số thực = 5,567098 và sử dụng lệnh System out printf để in ra số
         thực đó chỉ bao gồm 4 số đằng sau*/
         double i = 5.567098;
-        System.out.printf("%5.4f", i);
+        System.out.printf("%5.4f%n", i);
     }
 
     static void question4() {
@@ -33,7 +34,8 @@ public class Exercise2 {
         dạng như sau:
         Họ và tên: "Nguyễn Văn A" thì sẽ in ra trên console như sau:
         Tên tôi là "Nguyễn Văn A" và tôi đang độc thân.*/
-        System.out.println("Tên tôi là \"Nguyễn Văn A\" và tôi đang độc thân");
+        String fullName =  "Nguyễn Văn A";
+        System.out.println("Tên tôi là " + fullName + " và tôi đang độc thân");
     }
 
     static void question5() {
@@ -71,11 +73,11 @@ public class Exercise2 {
 
 
     public static void main(String[] args) {
-//        question1();
-//        question2();
-//        question3();
-//        question4();
-//        question5();
+        question1();
+        question2();
+        question3();
+        question4();
+        question5();
         question6();
     }
 }
