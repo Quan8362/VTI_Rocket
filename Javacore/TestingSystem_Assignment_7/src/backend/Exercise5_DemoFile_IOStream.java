@@ -23,7 +23,7 @@ public class Exercise5_DemoFile_IOStream {
             ObjectOutputStream out = new ObjectOutputStream(fos);
 
             for (int i = 0; i < 3; i++) {
-                System.out.println("Nhập thông tin Student " + (i + 1) + " : ");
+                System.out.println("Nhập thông tin Student " + (i + 1) + " :");
                 System.out.println("Nhập ID: ");
                 int id = sc.nextInt();
                 System.out.println("Nhập Name: ");
