@@ -1,15 +1,10 @@
 package backend;
 
-import entity.Student1;
 import entity.Student2;
 import utils.FileManager;
 
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import java.io.IOException;
 import java.io.ObjectOutputStream;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class Exercise5_DemoFile_IOStream {
@@ -28,7 +23,7 @@ public class Exercise5_DemoFile_IOStream {
             ObjectOutputStream out = new ObjectOutputStream(fos);
 
             for (int i = 0; i < 3; i++) {
-                System.out.println("Nhập thông tin Student " + (i + 1) + " :");
+                System.out.println("Nhập thông tin Student " + (i + 1) + " : ");
                 System.out.println("Nhập ID: ");
                 int id = sc.nextInt();
                 System.out.println("Nhập Name: ");
