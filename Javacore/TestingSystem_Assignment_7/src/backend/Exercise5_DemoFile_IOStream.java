@@ -29,7 +29,7 @@ public class Exercise5_DemoFile_IOStream {
                 System.out.println("Nhập Name: ");
                 String name = sc.next();
                 Student2 student2 = new Student2(id, name);
-                out.writeObject(student2);
+                out.writeObject(student2.toString());
             }
             fos.close();
             out.close();

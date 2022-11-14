@@ -11,4 +11,11 @@ public class Student2 implements Serializable {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Student2{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }
