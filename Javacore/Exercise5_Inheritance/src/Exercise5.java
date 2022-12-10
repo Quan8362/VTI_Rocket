@@ -20,6 +20,8 @@ public class Exercise5 {
 
     //them mowis
 
+    // get all
+
 
     public void menu() {
         while (true) {
